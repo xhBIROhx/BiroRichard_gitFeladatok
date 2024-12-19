@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq.Expressions;
 using System.Runtime.ConstrainedExecution;
 
 namespace MyApp
@@ -50,6 +51,18 @@ namespace MyApp
                 }
             }
             return szam;
+        }
+        
+        static void F05(int[] tomb) {
+            System.Console.WriteLine("Ennyi db pozitív szám van a tömbben: "+ F02([1,2]));
+            System.Console.WriteLine("A tömb elemeinek átlaga: " + F03([1,2]));
+            System.Console.Write("A tömbből alkotott páratlan számok: ");
+            foreach (int element in F04([1,2]))
+            {
+                System.Console.Write(element+ ", ");   
+            }
+            System.Console.WriteLine();
+            
         }
     }
 }
