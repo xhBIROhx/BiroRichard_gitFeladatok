@@ -38,5 +38,18 @@ namespace MyApp
             atlag /= tomb.Length;
             return atlag;
         }
+
+        static int[] F04(int[] tomb) {
+            int[] szam = new int[10];
+            for (int i = 0; i < tomb.Length; i++)
+            {   
+                if ( tomb[i] % 2 == 0) {
+                    szam[i] = tomb[i]+1;
+                }else{
+                    szam[i] = tomb[i];
+                }
+            }
+            return szam;
+        }
     }
 }
