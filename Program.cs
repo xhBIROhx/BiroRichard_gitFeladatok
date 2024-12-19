@@ -10,7 +10,10 @@ namespace MyApp
         static Random rand;
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] szamok = new int[10];
+            
+            F01(szamok);
+            F05(szamok);
         }
 
         static void F01(int[] tomb) {
@@ -62,7 +65,7 @@ namespace MyApp
                 System.Console.Write(element+ ", ");   
             }
             System.Console.WriteLine();
-            
+
         }
     }
 }
