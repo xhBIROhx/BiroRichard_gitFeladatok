@@ -18,5 +18,15 @@ namespace MyApp
                 tomb[i] += rand.Next(1,51);
             }
         }
+        static int F02(int[] tomb) {
+            int szam = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {   
+                if ( tomb[i] % 2 == 0) {
+                    szam ++;
+                }
+            }
+            return szam;
+        }
     }
 }
